@@ -8,6 +8,7 @@ function TableCoin({data}) {
             <th>Rank</th>
             <th>Name</th>
             <th>Symbol</th>
+            <th>Price</th>
             <th>ID</th>
         </tr>
     </thead>
@@ -17,6 +18,7 @@ function TableCoin({data}) {
                 <td>{item.rank}</td>
                 <td>{item.name}</td>
                 <td>{item.symbol}</td>
+                <td>{Math.round(item.price_usd)}</td>
                 <td>{item.id}</td>
             </tr>
         ))}
